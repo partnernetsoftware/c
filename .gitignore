@@ -1,0 +1,36 @@
+# Compiled output
+c.exe
+*.o
+*.out
+a.out
+hello
+hello_linked
+multifile_test
+
+# Test files (keep for examples)
+# test_*.c
+# utils.c
+# utils.h
+
+# Temporary files
+/tmp/c_exe_temp_output
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.a
+*.so
+*.dylib
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
