@@ -32,14 +32,20 @@ test: $(TARGET)
 	./$(TARGET) --help
 	@echo "Tests complete"
 
+test-full: $(TARGET)
+	@echo "Running comprehensive test suite..."
+	@chmod +x test_suite.sh
+	@./test_suite.sh
+
 help:
 	@echo "Makefile for c.exe"
 	@echo ""
 	@echo "Targets:"
-	@echo "  all      - Build c.exe (default)"
-	@echo "  clean    - Remove built files"
-	@echo "  install  - Install c.exe to /usr/local/bin"
-	@echo "  test     - Run basic tests"
-	@echo "  help     - Show this help message"
+	@echo "  all       - Build c.exe (default)"
+	@echo "  clean     - Remove built files"
+	@echo "  install   - Install c.exe to /usr/local/bin"
+	@echo "  test      - Run basic tests"
+	@echo "  test-full - Run comprehensive test suite"
+	@echo "  help      - Show this help message"
 	@echo ""
 	@echo "Current architecture: $(ARCH)"

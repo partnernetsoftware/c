@@ -188,6 +188,24 @@ make
 make test
 ```
 
+Or run the comprehensive test suite:
+
+```bash
+make test-full
+```
+
+The comprehensive test suite covers:
+- Version and help commands
+- Simple compilation
+- Custom output names
+- Run mode (compile and execute)
+- Compile-only mode
+- Link mode
+- Multi-file compilation
+- Compiler flags
+- Architecture flags
+- Package manager mode
+
 ### Clean Build
 
 ```bash
@@ -197,7 +215,7 @@ make
 
 ## License
 
-This project is opensource. Please check the LICENSE file for details.
+This project is opensource and released under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
